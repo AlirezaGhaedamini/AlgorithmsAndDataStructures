@@ -78,6 +78,18 @@ public class Tree {
         System.out.println(node.value);
         traverseInOrder(node.rightChild);
     }
+    public void traversePostOrder(){
+        traversePostOrder(root);
+    }
+
+    public void traversePostOrder(Node node){
+        if (node == null){
+            return;
+        }
+        traversePostOrder(node.leftChild);
+        traversePostOrder(node.rightChild);
+        System.out.println(node.value);
+    }
 
 
 }

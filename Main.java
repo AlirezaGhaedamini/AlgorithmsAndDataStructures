@@ -106,6 +106,9 @@ public class Main {
         System.out.println("testing traverseInOrder:");
         tree.traverseInOrder();
 
+        System.out.println("testing traversePostOrder:");
+        tree.traversePostOrder();
+
 
 
 
