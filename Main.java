@@ -1,4 +1,3 @@
-import java.io.PipedOutputStream;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Queue;
@@ -103,6 +102,9 @@ public class Main {
 
         System.out.println("testing traversePreOrder:");
         tree.traversePreOrder();
+
+        System.out.println("testing traverseInOrder:");
+        tree.traverseInOrder();
 
 
 

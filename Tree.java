@@ -66,6 +66,18 @@ public class Tree {
         traversePreOrder(node.leftChild);
         traversePreOrder(node.rightChild);
     }
+    public void traverseInOrder(){
+        traverseInOrder(root);
+    }
+
+    public void traverseInOrder(Node node){
+        if (node == null){
+            return;
+        }
+        traverseInOrder(node.leftChild);
+        System.out.println(node.value);
+        traverseInOrder(node.rightChild);
+    }
 
 
 }
