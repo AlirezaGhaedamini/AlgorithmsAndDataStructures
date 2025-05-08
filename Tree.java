@@ -133,6 +133,22 @@ public class Tree {
 
 
     }
+    public boolean isBinarySearchTree() {
+        return isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isBinarySearchTree(Node node, int min, int max) {
+        if (node == null)
+            return true;
+
+        if (node.value < min || node.value > max)
+            return false;
+
+        return isBinarySearchTree(node.leftChild, min, node.value - 1) &&
+                isBinarySearchTree(node.rightChild, node.value, max);
+    }
+
+
 
 }
 

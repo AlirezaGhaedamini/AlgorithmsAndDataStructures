@@ -129,6 +129,9 @@ public class Main {
 
         System.out.println(tree.equals(tree2));
 
+        System.out.println("testing the isBinarySearchMethod:");
+        System.out.println(tree.isBinarySearchTree());
+
 
 
 
