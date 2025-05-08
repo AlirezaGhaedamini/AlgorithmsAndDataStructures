@@ -54,36 +54,39 @@ public class Tree {
         }
         return false;
     }
-    public void traversePreOrder(){
+
+    public void traversePreOrder() {
         traversePreOrder(root);
     }
 
-    public void traversePreOrder(Node node){
-        if (node == null){
+    public void traversePreOrder(Node node) {
+        if (node == null) {
             return;
         }
         System.out.println(node.value);
         traversePreOrder(node.leftChild);
         traversePreOrder(node.rightChild);
     }
-    public void traverseInOrder(){
+
+    public void traverseInOrder() {
         traverseInOrder(root);
     }
 
-    public void traverseInOrder(Node node){
-        if (node == null){
+    public void traverseInOrder(Node node) {
+        if (node == null) {
             return;
         }
         traverseInOrder(node.leftChild);
         System.out.println(node.value);
         traverseInOrder(node.rightChild);
     }
-    public void traversePostOrder(){
+
+    public void traversePostOrder() {
         traversePostOrder(root);
     }
 
-    public void traversePostOrder(Node node){
-        if (node == null){
+    public void traversePostOrder(Node node) {
+        if (node == null) {
             return;
         }
         traversePostOrder(node.leftChild);
@@ -91,5 +94,21 @@ public class Tree {
         System.out.println(node.value);
     }
 
+    public int height() {
+        return height(root);
+    }
+
+    private int height(Node node) {
+        if (node == null)
+            return -1;
+
+        return 1 + Math.max(height(node.leftChild), height(node.rightChild));
+    }
+
 
 }
+
+
+
+
+

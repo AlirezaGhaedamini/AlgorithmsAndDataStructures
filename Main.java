@@ -109,6 +109,9 @@ public class Main {
         System.out.println("testing traversePostOrder:");
         tree.traversePostOrder();
 
+        System.out.println("testing Depth and height");
+
+        System.out.println(tree.height());
 
 
 
