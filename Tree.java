@@ -104,6 +104,17 @@ public class Tree {
 
         return 1 + Math.max(height(node.leftChild), height(node.rightChild));
     }
+    public int min(){
+        return min(root);
+
+    }
+    private int min(Node node){
+        if (node == null){
+            return Integer.MAX_VALUE;
+        }
+        return Math.min(node.value, Math.min(min(node.leftChild), min(node.rightChild)));
+
+    }
 
 
 }

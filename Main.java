@@ -113,6 +113,8 @@ public class Main {
 
         System.out.println(tree.height());
 
+        System.out.println(tree.min());
+
 
 
 
