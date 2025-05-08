@@ -113,7 +113,21 @@ public class Main {
 
         System.out.println(tree.height());
 
+        System.out.println("testing minimumfinder Method");
         System.out.println(tree.min());
+
+
+        System.out.println("Testing the equals");
+        var tree2 = new Tree();
+        tree2.insert(7);
+        tree2.insert(4);
+        tree2.insert(9);
+        tree2.insert(1);
+        tree2.insert(6);
+        tree2.insert(8);
+        tree2.insert(7);
+
+        System.out.println(tree.equals(tree2));
 
 
 
