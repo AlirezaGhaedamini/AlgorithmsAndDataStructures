@@ -133,6 +133,19 @@ public class Main {
         System.out.println(tree.isBinarySearchTree());
 
 
+        System.out.println(" testing the AVLTree");
+        AVLTree tree3 = new AVLTree();
+        tree3.insert(30);
+        tree3.insert(20);
+        tree3.insert(10); // Triggers rotation (LL case)
+        tree3.insert(25); // LR case
+        tree3.insert(40);
+        tree3.insert(50); // RR case
+        tree3.insert(45); // RL case
+
+        tree3.printInOrder();
+
+
 
 
     }
