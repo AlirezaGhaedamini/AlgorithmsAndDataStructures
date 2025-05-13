@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Queue;
@@ -145,7 +146,18 @@ public class Main {
 
         tree3.printInOrder();
 
+        System.out.println("testing the heap:");
+        Heap heap = new Heap(10);
 
+        heap.insert(20);
+        heap.insert(30);
+        heap.insert(10);
+        heap.insert(40);
+
+        heap.print();
+
+        System.out.println("Max: " + heap.remove());
+        heap.print();
 
 
     }
