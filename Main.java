@@ -146,6 +146,17 @@ public class Main {
         tree3.printInOrder();
 
 
+        System.out.println("tesing the Trie");
+        Trie trie = new Trie();
+
+        trie.insert("car");
+        trie.insert("cat");
+        trie.insert("care");
+
+        System.out.println(trie.contains("cat"));
+        System.out.println(trie.contains("can"));
+        System.out.println(trie.startsWith("ca"));
+        System.out.println(trie.startsWith("do"));
 
 
     }
