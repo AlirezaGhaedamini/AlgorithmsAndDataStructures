@@ -145,6 +145,7 @@ public class Main {
         tree3.insert(45); // RL case
 
         tree3.printInOrder();
+        System.out.println();
 
         System.out.println("testing the heap:");
         Heap heap = new Heap(10);
@@ -159,7 +160,18 @@ public class Main {
         System.out.println("Max: " + heap.remove());
         heap.print();
 
+        System.out.println("Testing the Trie");
 
+        Trie trie = new Trie();
+
+        trie.insert("car");
+        trie.insert("cat");
+        trie.insert("care");
+
+        System.out.println(trie.contains("cat"));
+        System.out.println(trie.contains("can"));
+        System.out.println(trie.startsWith("ca"));
+        System.out.println(trie.startsWith("do"));
     }
 
 }
