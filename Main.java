@@ -83,9 +83,9 @@ public class Main {
 
         System.out.println("HashTable Test");
         HashTable table = new HashTable();
-        table.put(6,"A");
-        table.put(8,"B");
-        table.put(11,"C");
+        table.put(6, "A");
+        table.put(8, "B");
+        table.put(11, "C");
         System.out.println("Done");
 
 
@@ -172,9 +172,33 @@ public class Main {
         System.out.println(trie.contains("can"));
         System.out.println(trie.startsWith("ca"));
         System.out.println(trie.startsWith("do"));
+
+
+        System.out.println("testing the Graph");
+
+        GraphList listGraph = new GraphList();
+        listGraph.addVertex("A");
+        listGraph.addVertex("B");
+        listGraph.addVertex("C");
+        listGraph.addEdge("A", "B");
+        listGraph.addEdge("A", "C");
+        listGraph.print();
+
+        System.out.println();
+
+        // Using Adjacency Matrix
+        GraphMatrix matrixGraph = new GraphMatrix(3);
+        matrixGraph.addVertex("A");
+        matrixGraph.addVertex("B");
+        matrixGraph.addVertex("C");
+        matrixGraph.addEdge("A", "B");
+        matrixGraph.addEdge("A", "C");
+        matrixGraph.print();
     }
 
 }
+
+
 
 
 
