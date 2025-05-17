@@ -194,6 +194,16 @@ public class Main {
         matrixGraph.addEdge("A", "B");
         matrixGraph.addEdge("A", "C");
         matrixGraph.print();
+
+
+        System.out.println("Testing the WeightedGraph");
+        WeightedGraph g = new WeightedGraph();
+        g.addEdge("A", "B", 5);
+        g.addEdge("A", "C", 3);
+        g.addEdge("B", "C", 2);
+        g.addEdge("C", "D", 7);
+
+        g.display();
     }
 
 }
